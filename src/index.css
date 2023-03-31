@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.button1 {
+  @apply  bg-indigo-800 rounded-full shadow-md shadow-indigo-900 transition-all duration-200 cursor-pointer outline-none w-10 h-10 mt-3 ml-80 mb-0;
+}
+.button2 {
+  @apply  bg-indigo-800 rounded-full shadow-md shadow-indigo-900 transition-all duration-200 cursor-pointer outline-none w-10 h-10 mt-3 ml-0 mb-3;
+}
+
+.button1:hover {
+  @apply bg-indigo-300 shadow-md shadow-indigo-900/100 transform -translate-y-1;
+}
+.button2:hover {
+  @apply bg-indigo-300 shadow-md shadow-indigo-900/100 transform -translate-y-1;
+}
+
