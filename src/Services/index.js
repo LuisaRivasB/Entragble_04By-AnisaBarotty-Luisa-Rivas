@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
-const BASE_URL = 'https://users-crud.academlo.tech/';
+const BASE_URL = 'https://users-crud-backend-nsup.onrender.com/';
 export const getUsers = async () => {
   try {
     const res = await axios.get(BASE_URL + 'users/');
