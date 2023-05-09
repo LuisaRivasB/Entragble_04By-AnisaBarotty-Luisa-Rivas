@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 const BASE_URL = 'https://users-crud-backend-nsup.onrender.com/';
 export const getUsers = async () => {
   try {
-    const res = await axios.get(BASE_URL + 'users/');
+    const res = await axios.get(BASE_URL + 'user');
     return res.data;
   } catch (error) {
     console.log(error);
@@ -11,7 +11,7 @@ export const getUsers = async () => {
 };
 export const createUser = async (data) => {
   try {
-    await axios.post(BASE_URL + 'users/', data);
+    await axios.post(BASE_URL + 'user', data);
     toast.success('User created successfully!');
   } catch (error) {
     console.error(error);
